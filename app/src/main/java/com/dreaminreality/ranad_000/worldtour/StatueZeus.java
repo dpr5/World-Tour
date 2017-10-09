@@ -1,5 +1,6 @@
 package com.dreaminreality.ranad_000.worldtour;
 
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -12,10 +13,14 @@ public class StatueZeus extends AppCompatActivity {
     private TextView title_details;
     private TextView content;
 
+    private SectionsPageAdapter sectionsPageAdapter;
+    private ViewPager mViewPager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_statue_zeus);
+
 
         image = (ImageView)findViewById(R.id.header_image);
         title = (TextView)findViewById(R.id.title);
