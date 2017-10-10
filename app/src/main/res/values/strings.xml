@@ -12,4 +12,9 @@
     <string name="babylon_garden" formatted="true"> The Hanging Gardens of Babylon are thought to have been built in the ancient city of Babylon. Even though there is no proof that they actually existed, they are considered to be one of the Seven Wonders of the World. It is called the Hanging Gardens because the gardens were built high above the ground on multi-level stone terraces. The plants weren\'t rooted in the earth like a traditional garden. If it existed it was likely the most beautiful man-made gardens ever created.</string>
     <string name="temple_artemis" formatted="true"> The Temple of Artemis at Ephesus was built to honor Artemis, one of three maiden goddesses of Olympus. This temple is considered one of the Seven Wonders of the Ancient World. It was built in Ephesus (an ancient city), which today would be near Selcuk, Turkey. It had to be rebuilt at least three times due to fire, flood and a mob that was determined to destroy it. Each time it was rebuilt it became larger and even more beautiful and impressive.</string>
     <string name="statue_zeus" formatted="true"> The Statue of Zeus at Olympia was created by a sculptor named Phidias. It took him 12 years, from 430 to 422 BC, to complete the statue. Zeus was considered the king of the Greek gods and this magnificent statue was created to honor him. It was placed in the Temple at Olympia, a shrine to Zeus where Olympic Games took place every four years. The statue was destroyed by fire in the fifth century A.D.</string>
+
+
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
 </resources>

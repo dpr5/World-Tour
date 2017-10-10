@@ -1,6 +1,5 @@
 package com.dreaminreality.ranad_000.worldtour;
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -13,7 +12,7 @@ import java.util.List;
 /**
  * Created by ranad_000 on 10/6/2017.
  */
-public class Fragment1 extends android.support.v4.app.Fragment {
+public class Fragment2 extends android.support.v4.app.Fragment {
 
 
     private List<String> projects= new ArrayList<String>();

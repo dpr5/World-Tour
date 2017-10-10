@@ -1,5 +1,6 @@
 package com.dreaminreality.ranad_000.worldtour;
 
+import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -21,6 +22,15 @@ public class StatueZeus extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_statue_zeus);
 
+        SectionsPageAdapter adpater = new SectionsPageAdapter(getSupportFragmentManager());
+
+        // Set up the ViewPager with the sections adapter.
+        mViewPager = (ViewPager) findViewById(R.id.container);
+        setupViewPager(mViewPager);
+
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(mViewPager);
+
 
         image = (ImageView)findViewById(R.id.header_image);
         title = (TextView)findViewById(R.id.title);
@@ -32,5 +42,13 @@ public class StatueZeus extends AppCompatActivity {
         title_details.setText("Ancient Greece");
         content.setText(getString(R.string.statue_zeus));
 
+    }
+
+    private void setupViewPager(ViewPager viewPager) {
+        SectionsPageAdapter adapter = new SectionsPageAdapter(getSupportFragmentManager());
+        adapter.addFragment(new Fragment1(), "7 Facts");
+        adapter.addFragment(new Fragment2(), "More Info");
+        //adapter.addFragment(new Fragment3(), "Education");
+        viewPager.setAdapter(adapter);
     }
 }
