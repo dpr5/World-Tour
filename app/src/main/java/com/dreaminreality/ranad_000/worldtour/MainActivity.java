@@ -47,13 +47,13 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewClick
 
 
     private void initData() {
-        Data_for_Cards card = new Data_for_Cards("Great Pyramids of Giza", R.drawable.great_pyramid_of_giza);
+        Data_for_Cards card = new Data_for_Cards("Ancient Wonders of the World", R.drawable.great_pyramid_of_giza);
         Data.add(card);
 
-        card = new Data_for_Cards("Hanging Gardens of Babylon", R.drawable.hanging_gardens_of_babylon);
+        card = new Data_for_Cards("Natural Wonders of the World", R.drawable.natural_wonders_main);
         Data.add(card);
 
-        card = new Data_for_Cards("Lighthouse of Alexandria", R.drawable.lighthouse_of_alexandria);
+        card = new Data_for_Cards("Modern Wonders of the World", R.drawable.modern_wonders_main);
         Data.add(card);
 
         card = new Data_for_Cards("Temple of Artemis At Ephesus", R.drawable.temple_of_artemis_at_ephesus);
@@ -77,15 +77,15 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewClick
 //        mToast.show();
         switch (position) {
             case 0:
-                Intent act0 = new Intent(MainActivity.this, GizaPyramid.class);
+                Intent act0 = new Intent(MainActivity.this, AncientWonders.class);
                 startActivity(act0);
                 break;
             case 1:
-                Intent act1 = new Intent(MainActivity.this, BabylonGardenActivity.class);
+                Intent act1 = new Intent(MainActivity.this, NaturalWondersActivity.class);
                 startActivity(act1);
                 break;
             case 2:
-                Intent act2 = new Intent(MainActivity.this, LighthouseAlexandria.class);
+                Intent act2 = new Intent(MainActivity.this, ModernWonders.class);
                 startActivity(act2);
                 break;
             case 3:

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -17,68 +20,64 @@
 
 
             <TextView
-                android:id="@+id/exp1"
+                android:id="@+id/built_in"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="Sentient"
-                android:textAlignment="center"
+                android:text="Built in:"
                 android:textSize="24sp"
                 android:textStyle="bold|italic" />
 
             <TextView
-                android:id="@+id/exp2"
+                android:id="@+id/location"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/exp1"
                 android:layout_marginLeft="10dp"
-                android:text="*Front End Web Developer"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/exp3"
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/exp2"
-                android:layout_marginLeft="10dp"
-                android:text="*HTML, CSS, Sass, Wordpress"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/exp4"
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/exp3"
-                android:layout_margin="10dp"
-                android:text="Dream In Reality"
-                android:textAlignment="center"
+                android:text="Located In: "
                 android:textSize="24sp"
-                android:textStyle="bold|italic" />
+                android:textStyle="bold|italic"/>
 
             <TextView
-                android:id="@+id/exp5"
+                android:id="@+id/still_exists"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/exp4"
                 android:layout_marginLeft="10dp"
-                android:text="*CEO, Lead Developer and Designer"
-                android:textSize="20dp" />
+                android:text="Still Exists: "
+                android:textSize="24sp"
+                android:textStyle="bold|italic"/>
 
             <TextView
-                android:id="@+id/exp6"
+                android:id="@+id/det4"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/exp5"
-                android:layout_marginBottom="15dp"
                 android:layout_marginLeft="10dp"
-                android:text="*Game and Mobile Developement"
-                android:textSize="20dp" />
+                android:text="Located In: "
+                android:textSize="24sp"
+                android:textStyle="bold|italic"/>
+
+            <TextView
+                android:id="@+id/det5"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Located In: "
+                android:textSize="24sp"
+                android:textStyle="bold|italic"/>
+
+            <TextView
+                android:id="@+id/det6"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Located In: "
+                android:textSize="24sp"
+                android:textStyle="bold|italic"/>
 
             <TextView
                 android:layout_width="match_parent"

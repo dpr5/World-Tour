@@ -24,7 +24,7 @@ public class TempleArtemis extends AppCompatActivity {
 
         image.setImageResource(R.drawable.temple_of_artemis_at_ephesus);
         title.setText("Temple of Artemis");
-        title_details.setText("Somewhere in the World");
+        //title_details.setText("Somewhere in the World");
         content.setText(getString(R.string.temple_artemis));
     }
 }

@@ -1,5 +1,7 @@
 package com.dreaminreality.ranad_000.worldtour;
 
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -13,10 +15,15 @@ public class BabylonGardenActivity extends AppCompatActivity {
     private TextView title_details;
     private TextView content;
 
+    private SectionsPageAdapter sectionsPageAdapter;
+    private ViewPager mViewPager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_babylon_garden);
+
+
 
         image = (ImageView)findViewById(R.id.header_image);
         title = (TextView)findViewById(R.id.title);
@@ -25,7 +32,14 @@ public class BabylonGardenActivity extends AppCompatActivity {
 
         image.setImageResource(R.drawable.hanging_gardens_of_babylon);
         title.setText("Hanging Garden in Babylon");
-        title_details.setText("Ancient city of Babylon");
         content.setText(getString(R.string.babylon_garden));
+    }
+
+    private void setupViewPager(ViewPager viewPager) {
+        SectionsPageAdapter adapter = new SectionsPageAdapter(getSupportFragmentManager());
+        adapter.addFragment(new Fragment1(), "7 Facts");
+        adapter.addFragment(new Fragment2(), "More Info");
+        //adapter.addFragment(new Fragment3(), "Education");
+        viewPager.setAdapter(adapter);
     }
 }

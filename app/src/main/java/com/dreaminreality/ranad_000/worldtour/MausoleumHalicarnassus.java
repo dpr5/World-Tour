@@ -12,10 +12,14 @@ public class MausoleumHalicarnassus extends AppCompatActivity {
     private TextView title_details;
     private TextView content;
 
+    Fragment1 fragment1 = new Fragment1();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mausoleum_halicarnassus);
+
+
 
         image = (ImageView)findViewById(R.id.header_image);
         title = (TextView)findViewById(R.id.title);
@@ -24,7 +28,7 @@ public class MausoleumHalicarnassus extends AppCompatActivity {
 
         image.setImageResource(R.drawable.mausoleum_at_halicarnassus);
         title.setText("Mausoleum at Halicarnassus");
-        title_details.setText("City of Halicarnassus");
+        //title_details.setText("City of Halicarnassus");
         content.setText(getString(R.string.mausoleum_halicarnassus));
 
     }

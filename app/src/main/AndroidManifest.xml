@@ -16,14 +16,31 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GizaDetailsActivity" />
+        <activity android:name=".NaturalWondersActivity" />
+        <activity android:name=".ModernWonders" />
         <activity android:name=".BabylonGardenActivity" />
         <activity android:name=".LighthouseAlexandria" />
         <activity android:name=".TempleArtemis" />
         <activity android:name=".StatueZeus" />
         <activity android:name=".ColossusRhodes" />
         <activity android:name=".MausoleumHalicarnassus" />
-        <activity android:name=".GizaPyramid"></activity>
+        <activity android:name=".GizaPyramid" />
+        <activity android:name=".AncientWonders" />
+        <activity android:name=".NaturalWonders" />
+        <activity android:name=".ChannelTunnel" />
+        <activity android:name=".CNTower" />
+        <activity android:name=".EmpireStateBuilding" />
+        <activity android:name=".GoldenGateBridge" />
+        <activity android:name=".ItaipuDam" />
+        <activity android:name=".DeltaWorks" />
+        <activity android:name=".PanamaCanal" />
+        <activity android:name=".MountEverest" />
+        <activity android:name=".VictoryFalls" />
+        <activity android:name=".GrandCanyon" />
+        <activity android:name=".BarrierReef" />
+        <activity android:name=".NorthernLights" />
+        <activity android:name=".ParicutinVolcano" />
+        <activity android:name=".RioDeJaneiro"></activity>
     </application>
 
 </manifest>

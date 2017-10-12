@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,14 +16,20 @@ import java.util.List;
  */
 public class Fragment1 extends android.support.v4.app.Fragment {
 
+    TextView text;
 
     private List<String> projects= new ArrayList<String>();
 
-
-    @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.frag1,container,false);
+
+
+    }
+
+    public void setText(String s){
+        TextView t = (TextView)getView().findViewById(R.id.built_in);
+        t.setText("Built in 1990");
     }
 
 

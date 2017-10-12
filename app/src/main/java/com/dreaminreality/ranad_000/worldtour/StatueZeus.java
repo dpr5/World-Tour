@@ -24,14 +24,6 @@ public class StatueZeus extends AppCompatActivity {
 
         SectionsPageAdapter adpater = new SectionsPageAdapter(getSupportFragmentManager());
 
-        // Set up the ViewPager with the sections adapter.
-        mViewPager = (ViewPager) findViewById(R.id.container);
-        setupViewPager(mViewPager);
-
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
-        tabLayout.setupWithViewPager(mViewPager);
-
-
         image = (ImageView)findViewById(R.id.header_image);
         title = (TextView)findViewById(R.id.title);
         title_details = (TextView)findViewById(R.id.title_details);
@@ -39,7 +31,7 @@ public class StatueZeus extends AppCompatActivity {
 
         image.setImageResource(R.drawable.statue_of_zeus_at_olympia);
         title.setText("Statue of Zeus");
-        title_details.setText("Ancient Greece");
+        //title_details.setText("Ancient Greece");
         content.setText(getString(R.string.statue_zeus));
 
     }
@@ -51,4 +43,5 @@ public class StatueZeus extends AppCompatActivity {
         //adapter.addFragment(new Fragment3(), "Education");
         viewPager.setAdapter(adapter);
     }
+    
 }

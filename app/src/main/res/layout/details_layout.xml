@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -8,61 +9,46 @@
         android:id="@+id/header_image"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
-
+        android:layout_weight="2"
+        android:padding="10dp"
         android:scaleType="fitXY"
-        android:src="@drawable/great_pyramid_of_giza" />
+        android:src="@drawable/great_pyramid_of_giza"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-
-        android:text="Title"
-        android:textAlignment="center"
-        android:textSize="30sp" />
-
-    <TextView
-        android:id="@+id/title_details"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:layout_margin="5dp"
-        android:layout_weight="0"
-        android:text="Title Details"
-        android:textAlignment="center"
-        android:textSize="30sp" />
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="Title"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/container"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_weight="2"
+        android:padding="10dp"
+        >
 
-        <ScrollView
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:padding="2dp">
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp">
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:id="@+id/content"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:padding="3dp"
-                    android:text="@string/statue_zeus"
-                    android:textSize="25sp" />
+                android:layout_height="wrap_content"
+                android:text="@string/paricutin_volcano"
+                android:textSize="25sp"
+                android:paddingBottom="10dp"/>
+        </RelativeLayout>
 
 
-            </LinearLayout>
-        </ScrollView>
-
-
-    </android.support.v4.view.ViewPager>
+    </ScrollView>
 
 
 </LinearLayout>

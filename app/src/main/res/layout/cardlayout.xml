@@ -23,6 +23,7 @@
             android:scaleType="fitXY"
             android:padding="10dp"
             android:src="@drawable/nantalan_lake"
+
             />
 
 
@@ -31,7 +32,9 @@
             android:layout_height="wrap_content"
             android:text="Card Title"
             android:id="@+id/card_title"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:textSize="20sp"
+            />
 
 
     </LinearLayout>
