@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+
     <ImageView
         android:id="@+id/header_image"
         android:layout_width="wrap_content"
@@ -42,7 +43,7 @@
                 android:id="@+id/content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/paricutin_volcano"
+                android:text="@string/christ_statue"
                 android:textSize="25sp"
                 android:paddingBottom="10dp"/>
         </RelativeLayout>

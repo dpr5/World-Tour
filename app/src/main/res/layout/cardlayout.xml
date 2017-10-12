@@ -22,7 +22,7 @@
             android:id="@+id/card_image"
             android:scaleType="fitXY"
             android:padding="10dp"
-            android:src="@drawable/nantalan_lake"
+            android:src="@drawable/great_pyramid_of_giza"
 
             />
 

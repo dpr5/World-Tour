@@ -18,6 +18,7 @@
         </activity>
         <activity android:name=".NaturalWondersActivity" />
         <activity android:name=".ModernWonders" />
+        <activity android:name=".NewWonders" />
         <activity android:name=".BabylonGardenActivity" />
         <activity android:name=".LighthouseAlexandria" />
         <activity android:name=".TempleArtemis" />
@@ -40,7 +41,14 @@
         <activity android:name=".BarrierReef" />
         <activity android:name=".NorthernLights" />
         <activity android:name=".ParicutinVolcano" />
-        <activity android:name=".RioDeJaneiro"></activity>
+        <activity android:name=".RioDeJaneiro" />
+        <activity android:name=".GreatWall" />
+        <activity android:name=".TajMahal" />
+        <activity android:name=".MachuPiccu" />
+        <activity android:name=".ChristRedeemer" />
+        <activity android:name=".Colosseum" />
+        <activity android:name=".ChichenItza" />
+        <activity android:name=".Petra"></activity>
     </application>
 
 </manifest>

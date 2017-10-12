@@ -2,6 +2,7 @@ package com.dreaminreality.ranad_000.worldtour;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,38 +16,43 @@ import java.util.ArrayList;
 
 public class MyAdapter extends PagerAdapter {
 
-    private ArrayList<Integer> images;
-    private LayoutInflater inflater;
+
     private Context context;
+    private  LayoutInflater layoutInflater;
+    private Integer[] images = {R.drawable.giza_pyramid, R.drawable.channel_tunnel, R.drawable.colossus_of_rhodes};
 
-    public MyAdapter(Context context, ArrayList<Integer> images) {
+
+    public MyAdapter(Context context, Integer[] image) {
         this.context = context;
-        this.images=images;
-        inflater = LayoutInflater.from(context);
-    }
-
-    @Override
-    public void destroyItem(ViewGroup container, int position, Object object) {
-        container.removeView((View) object);
+        this.images= image;
     }
 
     @Override
     public int getCount() {
-        return images.size();
-    }
-
-    @Override
-    public Object instantiateItem(ViewGroup view, int position) {
-        View myImageLayout = inflater.inflate(R.layout.slide, view, false);
-        ImageView myImage = (ImageView) myImageLayout
-                .findViewById(R.id.image);
-        myImage.setImageResource(images.get(position));
-        view.addView(myImageLayout, 0);
-        return myImageLayout;
+        return images.length;
     }
 
     @Override
     public boolean isViewFromObject(View view, Object object) {
-        return view.equals(object);
+        return view == object;
+    }
+
+    @Override
+    public Object instantiateItem(ViewGroup container, int position){
+        layoutInflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View view = layoutInflater.inflate(R.layout.custom_layout, null);
+        ImageView image = (ImageView) view.findViewById(R.id.images_for_slide);
+        image.setImageResource(images[position]);
+
+        ViewPager vp = (ViewPager)container;
+        vp.addView( view, 0);
+        return view;
+    }
+
+    @Override
+    public void destroyItem(ViewGroup container, int position, Object object) {
+        ViewPager vp = (ViewPager)container;
+        View view = (View)object;
+        vp.removeView(view);
     }
 }

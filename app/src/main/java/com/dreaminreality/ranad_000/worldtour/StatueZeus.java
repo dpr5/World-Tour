@@ -7,22 +7,32 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class StatueZeus extends AppCompatActivity {
 
     private ImageView image;
     private TextView title;
     private TextView title_details;
     private TextView content;
+    private ViewPager viewPager;
 
     private SectionsPageAdapter sectionsPageAdapter;
     private ViewPager mViewPager;
+
+    private ArrayList<Data_for_Cards> Data = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_statue_zeus);
 
+
+
         SectionsPageAdapter adpater = new SectionsPageAdapter(getSupportFragmentManager());
+
 
         image = (ImageView)findViewById(R.id.header_image);
         title = (TextView)findViewById(R.id.title);
@@ -43,5 +53,29 @@ public class StatueZeus extends AppCompatActivity {
         //adapter.addFragment(new Fragment3(), "Education");
         viewPager.setAdapter(adapter);
     }
-    
+
+    private void initData() {
+        Data_for_Cards card = new Data_for_Cards("Great Pyramids of Giza", R.drawable.great_pyramid_of_giza);
+        Data.add(card);
+
+        card = new Data_for_Cards("Hanging Gardens of Babylon", R.drawable.hanging_gardens_of_babylon);
+        Data.add(card);
+
+        card = new Data_for_Cards("Lighthouse of Alexandria", R.drawable.lighthouse_of_alexandria);
+        Data.add(card);
+
+        card = new Data_for_Cards("Temple of Artemis At Ephesus", R.drawable.temple_of_artemis_at_ephesus);
+        Data.add(card);
+
+        card = new Data_for_Cards("Mausoleum at Halicarnassus", R.drawable.mausoleum_at_halicarnassus);
+        Data.add(card);
+
+        card = new Data_for_Cards("Colossus of Rhodes", R.drawable.colossus_of_rhodes);
+        Data.add(card);
+
+        card = new Data_for_Cards("Statue of Zeus", R.drawable.statue_of_zeus_at_olympia);
+        Data.add(card);
+
+    }
+
 }

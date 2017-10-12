@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewClick
 
 
     private void initData() {
-        Data_for_Cards card = new Data_for_Cards("Ancient Wonders of the World", R.drawable.great_pyramid_of_giza);
+        Data_for_Cards card = new Data_for_Cards("Ancient Wonders of the World", R.drawable.ancient_wonders_main);
         Data.add(card);
 
         card = new Data_for_Cards("Natural Wonders of the World", R.drawable.natural_wonders_main);
@@ -56,17 +56,9 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewClick
         card = new Data_for_Cards("Modern Wonders of the World", R.drawable.modern_wonders_main);
         Data.add(card);
 
-        card = new Data_for_Cards("Temple of Artemis At Ephesus", R.drawable.temple_of_artemis_at_ephesus);
+        card = new Data_for_Cards("New Wonders", R.drawable.new_wonders_main);
         Data.add(card);
 
-        card = new Data_for_Cards("Mausoleum at Halicarnassus", R.drawable.mausoleum_at_halicarnassus);
-        Data.add(card);
-
-        card = new Data_for_Cards("Colossus of Rhodes", R.drawable.colossus_of_rhodes);
-        Data.add(card);
-
-        card = new Data_for_Cards("Statue of Zeus", R.drawable.statue_of_zeus_at_olympia);
-        Data.add(card);
 
     }
 
@@ -89,21 +81,10 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewClick
                 startActivity(act2);
                 break;
             case 3:
-                Intent act3 = new Intent(MainActivity.this, TempleArtemis.class);
+                Intent act3 = new Intent(MainActivity.this, NewWonders.class);
                 startActivity(act3);
                 break;
-            case 4:
-                Intent act4 = new Intent(MainActivity.this, MausoleumHalicarnassus.class);
-                startActivity(act4);
-                break;
-            case 5:
-                Intent act5 = new Intent(MainActivity.this, ColossusRhodes.class);
-                startActivity(act5);
-                break;
-            case 6:
-                Intent act6 = new Intent(MainActivity.this, StatueZeus.class);
-                startActivity(act6);
-                break;
+
         }
     }
 }
